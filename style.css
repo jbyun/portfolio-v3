@@ -1,4 +1,8 @@
-p {font-family:'HelveticaNeue-CondensedBold';}
+@import url("reset.css");
+
+body {font-family:'HelveticaNeue-CondensedBold';}
+a {text-decoration:none; color:#000000;}
+
 div#leftcol {
 	margin-left: 25px;
 	width:200px;
@@ -7,61 +11,41 @@ div#leftcol span {
 	float:left;
 }
 
-span#logo-lv1{
-font-size:92.87px;
+/***MISC***/
+hr {float:left; margin-top: 3px; width:88px; height:1px; background-color:#000000;}
+hr.line {float:left; width:197px; height:1px; margin-top:2px; background-color:#000000;}
+
+/***HEADER***/
+.selected {color:#0096ff; font-size:12px; position: relative; top:6px;}
+header div#lang {position:relative; top:15px; left:107px;}
+header div#lang a, header div#lang p {font-size: 12px;}
+header h1{font-size:92.87px; text-transform:uppercase;}
+header h1 span {margin-top:-30px; font-size: 51.72px; text-transform:uppercase;}
+header p span {font-size:13.66px; margin-top: -6px; padding:0 7px;}
+
+
+/***TAGLINE***/
+hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6, #contact h2 {float:left; text-transform:uppercase;}
+hgroup h2 {font-size: 32px; margin-top: -15px;}
+hgroup h3 {font-size:31px; margin-top: -10px;}
+hgroup h5 {margin-top: -4px; font-size:17px; letter-spacing:0.06em;}
+hgroup h4 { font-size:28px; margin-top:-4px; }
+hgroup h6 { font-size: 29px; margin-top:-6px;}
+
+/***CONTACT***/
+#contact h2 {font-size:28px; margin-top: -15px;}
+#namebar, #mailbar, #msgbar {
+	float: left; width: 183px;
+	padding:5px;
+	background: #fff;
+	border: 2px solid #ccc;
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	outline: none;
 }
 
-span#logo-lv2 {
-	margin-top:-30px;
-	font-size: 51.72px;
-}
+#submitbtn {float:right; width:60px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+background:white; color:black;}
+#namebar:hover, #mailbar:hover, #msgbar:hover, #submitbtn:hover{background:#0096ff;}
+#namebar.active #mailbar.active, #msgbar.active, #submitbtn.active {border:2px solid #0096ff;}
+#submitbtn:active {background:#0072c2; box-shadow: 0 -1px 2px black; color:white;}
 
-span#logo-lv3 {
-	font-size:13.66px;
-	margin-top: -6px;
-	padding:0 7px;
-}
-
-span#logo-lv4 {
-	font-size: 32.49px;
-	margin-top: -15px;
-}
-
-span#logo-lv5 {
-	font-size:31.48px;
-	margin-top: -10px;
-}
-
-span#logo-lv6 {
-	margin-top: -4px;
-	font-size:17px;
-	letter-spacing:0.06em;
-}
-
-span#logo-lv7 {
-	font-size:27.5px;
-	margin-top:-4px;
-}
-
-span#logo-lv8 {
-	font-size: 28.34px;
-	margin-top:-6px;
-}
-
-.breakline {
-	float:left;
-	margin-top: 3px;
-	width:88px;
-	height:2px;
-	background-color:#000000;
-	text-indent:-9999px;
-}
-
-.line {
-	float:left;
-	width:197px;
-	height:2px;
-	margin-top:2px;
-	background-color:#000000;
-	text-indent:-9999px;
-}
