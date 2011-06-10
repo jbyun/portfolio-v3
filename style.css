@@ -2,7 +2,7 @@
 
 body {font-family:'HelveticaNeue-CondensedBold';}
 a {text-decoration:none; color:#000000;}
-
+a:hover, a:active {-webkit-transition:color 0.2s linear; -mozkit-transition:color 0.2s linear;   }
 div#leftcol {
 	margin-left: 25px;
 	width:200px;
@@ -15,13 +15,20 @@ div#leftcol span {
 hr {float:left; margin-top: 3px; width:88px; height:1px; background-color:#000000;}
 hr.line {float:left; width:197px; height:1px; margin-top:2px; background-color:#000000;}
 
+/***LANGUAGE***/
+#langbar {width:100%; height:20px; position:absolute; top:0; left:0; background-color:rgba(0, 0, 0, 0.7);}
+#langbar p {float:right; margin:2px 45px 0 0;}
+#langbar a, #langbar p {font-size: 12px; color:white;}
+#langbar a:hover {color:#a7beff;}
+#langbar a:active {color:#0096ff;}
+.selected {color:#0096ff; font-size:12px;}
+
+
 /***HEADER***/
-.selected {color:#0096ff; font-size:12px; position: relative; top:6px;}
-header div#lang {position:relative; top:15px; left:107px;}
-header div#lang a, header div#lang p {font-size: 12px;}
-header h1{font-size:92.87px; text-transform:uppercase;}
+header {margin-top: 15px;}
+header h1{font-size:93px; text-transform:uppercase;}
 header h1 span {margin-top:-30px; font-size: 51.72px; text-transform:uppercase;}
-header p span {font-size:13.66px; margin-top: -6px; padding:0 7px;}
+header p span {font-size:14px; margin-top: -6px; padding:0 7px;}
 
 
 /***TAGLINE***/
@@ -45,7 +52,8 @@ hgroup h6 { font-size: 29px; margin-top:-6px;}
 
 #submitbtn {float:right; width:60px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 background:white; color:black;}
-#namebar:hover, #mailbar:hover, #msgbar:hover, #submitbtn:hover{background:#0096ff;}
-#namebar.active #mailbar.active, #msgbar.active, #submitbtn.active {border:2px solid #0096ff;}
-#submitbtn:active {background:#0072c2; box-shadow: 0 -1px 2px black; color:white;}
+#namebar:hover, #mailbar:hover, #msgbar:hover, #submitbtn:hover{background:#a7beff; -webkit-transition:background-color 0.2s linear;  
+}
+#namebar.active, #mailbar.active, #msgbar.active, #submitbtn.active {border:2px solid #0096ff; -webkit-transition:background-color 0.1s linear;}
+#submitbtn:active {background:#0096ff; box-shadow: 0 -1px 2px black; color:white; -webkit-transition:background-color 0.1s linear;}
 
