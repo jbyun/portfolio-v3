@@ -1,5 +1,16 @@
 @import url("reset.css");
 
+@font-face {
+    font-family: 'DaumSemiBold';
+    src: url('webfont/daum_semibold-webfont.eot');
+    src: url('webfont/daum_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfont/daum_semibold-webfont.woff') format('woff'),
+         url('webfont/daum_semibold-webfont.ttf') format('truetype'),
+         url('webfont/daum_semibold-webfont.svg#DaumSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /***CORE***/
 body {font-family:'HelveticaNeue-CondensedBold';}
 #wrapper {width:1120px; margin: 0 auto;}
@@ -29,16 +40,18 @@ header {margin-top: 15px;}
 header h1{font-size:93px; text-transform:uppercase;}
 header span {float:left;}
 header h1 span {margin-top:-30px; font-size: 51.72px; text-transform:uppercase;}
-header p span {font-size:14px; margin-top: -6px; padding:0 7px;}
+header p span {font-size:14px; margin-top: -6px; padding:0 7px; font-family:'DaumSemiBold';}
 
 /***TAGLINE***/
+hgroup {font-family:'DaumSemiBold';}
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6, #contact h2 {float:left; text-transform:uppercase;}
-hgroup h2 {font-size: 49px; margin-top: -15px; letter-space: 0.02em; font-weight: 900;}
-hgroup h3 {font-size:24px; margin-top: -10px;}
-hgroup h5 {margin-top: -4px; font-size:14px; letter-spacing:0.1em; }
-hgroup h4 { font-size:31px; margin-top:-4px; margin-left: -2px; letter-spacing: 0em}
-hgroup h6 { font-size: 20px; margin-top:-6px;}
-
+hgroup h2 {font-size: 48px; margin-top: -15px; letter-spacing: 0.04em;}
+hgroup h3 {font-size:24px; margin-top: -5px;}
+hgroup h5 {font-size:14px; letter-spacing:0.1em; }
+hgroup h4 { font-size:31px; margin-top:0px; margin-left: -2px; letter-spacing: 0em}
+hgroup h6 { font-size: 20px; margin-top:0px;}
+.webkr {text-indent: -9999px; background:url('images/webkr.png') top; display:bloack; float:left; height: 30px; width:30px; margin-top: 3px;}
+ 
 /***CONTACT***/
 #contact h2 {font-size:20px; margin-top: -15px;}
 #namebar, #mailbar, #msgbar {
