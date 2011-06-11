@@ -1,35 +1,35 @@
 @import url("reset.css");
 
+/***CORE***/
 body {font-family:'HelveticaNeue-CondensedBold';}
+#wrapper {width:1120px; margin: 0 auto;}
 a {text-decoration:none; color:#000000;}
 a:hover, a:active {-webkit-transition:color 0.2s linear; -mozkit-transition:color 0.2s linear;   }
-div#leftcol {
-	margin-left: 25px;
-	width:200px;
-}
-div#leftcol span {
-	float:left;
-}
+
+article#left-col {float:left; margin-left: 25px;width:200px;}
+article#content-col {float:right; width:810px;}
 
 /***MISC***/
 hr {float:left; margin-top: 3px; width:88px; height:1px; background-color:#000000;}
 hr.line {float:left; width:197px; height:1px; margin-top:2px; background-color:#000000;}
 
 /***LANGUAGE***/
-#langbar {width:100%; height:20px; position:absolute; top:0; left:0; background-color:rgba(0, 0, 0, 0.7);}
+#langbar {width:100%; height:20px; position:relative;; top:0; left:0; background-color:rgba(0, 0, 0, 0.7);}
 #langbar p {float:right; margin:2px 45px 0 0;}
 #langbar a, #langbar p {font-size: 12px; color:white;}
 #langbar a:hover {color:#a7beff;}
 #langbar a:active {color:#0096ff;}
 .selected {color:#0096ff; font-size:12px;}
 
+/*** LEFT COLUMN GOODIES ***/
+
 
 /***HEADER***/
 header {margin-top: 15px;}
 header h1{font-size:93px; text-transform:uppercase;}
+header span {float:left;}
 header h1 span {margin-top:-30px; font-size: 51.72px; text-transform:uppercase;}
 header p span {font-size:14px; margin-top: -6px; padding:0 7px;}
-
 
 /***TAGLINE***/
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6, #contact h2 {float:left; text-transform:uppercase;}
@@ -56,4 +56,25 @@ background:white; color:black;}
 }
 #namebar.active, #mailbar.active, #msgbar.active, #submitbtn.active {border:2px solid #0096ff; -webkit-transition:background-color 0.1s linear;}
 #submitbtn:active {background:#0096ff; box-shadow: 0 -1px 2px black; color:white; -webkit-transition:background-color 0.1s linear;}
+
+
+/*** CONTENT COLUMN ***/
+#web {margin-top: 38px;}
+.placeholder {width:200px; height:259px; text-indent:-9999px; background:#ccc; border:1px solid black; float:left;}
+
+ 
+
+
+
+/*** FOOTER ***/
+footer {clear:both; padding:10px 0 15px 12px;text-transform: uppercase;}
+footer#social {
+	float:left;
+	width:195px;
+}
+footer#copyright {
+	float:right;
+	font-size: 12px;
+	margin-top: -35px;  
+}
 
