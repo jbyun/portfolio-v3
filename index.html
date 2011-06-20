@@ -2,10 +2,11 @@
 <html>
 
 <head>
+	<title>Byun Creative | The Online Portfolio of James Byun</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="http://fast.fonts.com/jsapi/bb68523e-3656-4478-9181-6e60d7a8f2be.js"></script>
+	<link rel="stylesheet" type="text/css" href="media.css" />
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
@@ -36,18 +37,57 @@
 
 <section id="contact">
 	<h2>give me a shout</h2>
-	<form action="" method="get">
+	
+	<?php
+	if (isset($_REQUEST['email']))
+	//if "email" is filled out, send email
+	  {
+	  //send email
+	  $email = $_REQUEST['email'] ;
+	  $subject = $_REQUEST['subject'] ;
+	  $message = $_REQUEST['message'] ;
+	  mail("james@byuncreative.com", "$subject",
+	  $message, "From:" . $email);
+	  echo "Thank you for using our mail form";
+	  }
+	else
+	//if "email" is not filled out, display the form
+	  {
+	  echo "
+			<form method='post' action='index.php'>
+
 		<fieldset>
-			<input type="text" id="namebar" />
-		</fieldset>
-		<fieldset>
-			<input type="text" id="mailbar" />
-		</fieldset>
-		<fieldset>
-			<textarea rows="8" cols="25" id="msgbar"></textarea>
-		<input type="submit" value="Send" id="submitbtn" />
-		</fieldset>	
-	</form>
+			<ol>
+				<li>
+					<input type='text' id='name' name='msg' placeholder='Name (Required)' title='What's your name?' required />
+						<p class='nameval'>
+							<span class='inval-name'>What's your name?</span>
+							<span class='val-name'>Oh that's a nice name!</span>
+						</p>
+				</li>
+
+		<li>
+					<input type='email' id='email' name='email' placeholder='Email (Required)' title='What's your email address?' required />
+					<p class='mailval'>
+						<span class='inval-mail'>And your email address?</span>
+						<span class='val-mail'>Looks good</span>
+					</p>
+		</li>
+		<li>
+					<textarea type='message' rows='8' cols='25' id='message' placeholder='Message (Required)' title='Give me a message to read?' required ></textarea>
+					<p class='msgval'>
+						<span class='inval-msg'>Give me a message to read?</span>
+						<span class='val-msg'>Thanks! :-)</span>
+					</p>
+				<input type='submit' value='Send' id='submitbtn' />
+		</li>
+		</ol>
+				</fieldset>	
+			</form>
+	 ";
+	  }
+	?>
+	
 </section>
 </article> <!-- end left-col -->
 
@@ -87,6 +127,9 @@
 </footer>
 
 </div><!-- end wrapper -->
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/4c114d4d-902c-41ba-8793-e5242bc7b81f.js"></script>
 
 </body>
 </html>
+
+

@@ -1,0 +1,19 @@
+@-moz-document url-prefix() {
+	hgroup h5 {font-size: 22px;}
+	.nameval, .mailval, .subjectval, .msgval {left: 405px;}
+	#contact input:focus:required:invalid + .nameval .val-name, #contact input.error:focus + .nameval .val-name,
+	#contact input.required:focus + .nameval .val-name,	#contact input:focus + .nameval .val-name,
+	#contact input:focus:required:invalid + .mailval .val-mail,	#contact input.error:focus + .mailval .val-mail,
+	#contact input.required:focus + .mailval .val-mail,	#contact input:focus + .mailval .val-mail,
+	#contact input:focus:required:invalid + .subjectval .val-subject, #contact input.error:focus + .subjectval .val-subject,
+	#contact input.required:focus + .subjectval .val-subject, #contact input:focus + .subjectval .val-subject,						
+	#contact textarea:focus:required:invalid + .msgval .val-msg, #contact textarea.error:focus + .msgval .val-msg,
+	#contact textarea.required:focus + .msgval .val-msg, #contact textarea:focus + .msgval .val-msg
+	{ display: none; }
+	
+	#contact input:focus:required:valid + .nameval .val-name, #contact input.valid:focus + .nameval .val-name,
+	#contact input:focus:required:valid + .mailval .val-mail, #contact input.valid:focus + .mailval .val-mail,
+	#contact input:focus:required:valid + .subjectval .val-subject, #contact input.valid:focus + .subjectval .val-subject,
+	#contact textarea:focus:required:valid + .msgval .val-msg, #contact textarea.valid:focus + .msgval .val-msg					
+	{ display: block; }	
+}

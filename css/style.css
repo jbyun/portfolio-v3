@@ -4,9 +4,9 @@
 /***CORE***/
 body {font-family:'BebasNeueRegular', 'Helvetica', 'Arial', 'sans-serif';}
 #wrapper {width:1120px; margin: 0 auto;}
-a {text-decoration:none; color:#000000; -webkit-transition:color 0.2s linear; -moz-transition:color 0.2s linear; transition:color 0.2s linear; outline:none;}
+a {text-decoration:none; color:#0096ff; -webkit-transition:color 0.2s linear; -moz-transition:color 0.2s linear; transition:color 0.2s linear; outline:none;}
 a:hover {color:#ccc;}
-a:active {color:#0096ff;}
+a:active {color:#000;}
 article#left-col {float:left; margin-left: 25px;width:200px;}
 article#content-col {float:right; width:810px;}
 #colophon {display:none;}
@@ -20,11 +20,11 @@ hr.line {float:left; width:197px; height:1px; margin-top:2px; background-color:#
 
 /***LANGUAGE***/
 #langbar {width:100%; height:20px; position:relative;; top:0; left:0; background-color:rgba(0, 0, 0, 0.7);}
-#langbar p {float:right; margin:2px 45px 0 0;}
-#langbar a, #langbar p {font-size: 12px; color:white;}
+#langbar p {float:right; margin:2px 45px 0 0; font-size:12px; color:white;}
+#langbar a {font-size: 12px; color:#00aeff;}
 #langbar a:hover {color:#ccc;}
 #langbar a:active {color:#0096ff;}
-.selected {color:#0096ff; font-size:12px;}
+.selected {color:#fff; font-size:12px;}
 
 
 /*** LEFT COLUMN GOODIES ***/
@@ -36,7 +36,7 @@ header h1{font-size:124px; text-transform:uppercase; font-weight:normal;}
 header span {float:left;}
 header h1 span {margin-top:-40px; font-size: 69px; text-transform:uppercase;}
 header p span {font-size:14px; margin-top: -16px; padding:0 7px;}
-
+header h1 a {color:#000;} header h1 a:active {color:#0096ff;}
 /***TAGLINE***/
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6, #contact h2 {float:left; text-transform:uppercase; font-weight:normal;}
 hgroup h2 {font-size: 44px; margin-top: -15px;}
@@ -57,6 +57,7 @@ hgroup h6 { font-size: 39px; margin-top:-6px;}
 	-webkit-border-radius: 5px;
 	outline: none;
 }
+#contact p {float:left; margin-top: 10px;}
 #contact form {float:left;}
 #contact ol {list-style-type:none;}
 #contact input, #contact textarea { font-family:'BebasNeueRegular', 'helvetica', 'arial'; font-size:13px; letter-spacing: 0.1em;}
@@ -150,7 +151,12 @@ background:white; color:black;}
 
 /*** CONTENT COLUMN ***/
 #web {margin-top: 38px;}
-.placeholder {width:200px; height:259px; text-indent:-9999px; background:#ccc; border:1px solid black; float:left;}
+#illustration, #print {margin:0;}
+.portbox {width:200px; height:256px; float:left; margin:0;}
+.portbox h2 {font-size: 24px;} .portbox h3 {font-size: 20px;} .portbox p {font-size: 16px;}
+.portbox h2, .portbox h3 {font-weight:normal;} .portbox hr {width:190px; float:left; margin: 3px 0 3px 0;} 
+.portbox a img:hover {opacity: 0.6; filter:alpha(opacity=60); -webkit-transition:opacity 0.2s linear; -moz-transition:opacity 0.2s linear; transition:opacity 0.2s linear;}
+
 
 /*** SOCIAL MEDIA ***/
 .social ul {list-style-type:none;} .social ul li {margin-right: 5px; font-size: 12px;}
@@ -163,6 +169,6 @@ background:white; color:black;}
 
 /*** FOOTER ***/
 footer {clear:both; padding:10px 0 15px 12px;text-transform: uppercase;}
-footer.social {float:left; width:195px;}
-footer#copyright {float:right; font-size: 12px; margin-top: -35px;}
+div.social {float:left; width:195px;}
+div#copyright {float:right;}
 

@@ -37,5 +37,3 @@ time, mark, audio, video {
     /* tables need cellspacing=0 in markup */
     table{border-collapse:collapse; border-spacing:0;}
     
-/* kills background rollover on images based on .js class in scripts.js */
-    div.post div.wp-caption a:hover{background:none;}
