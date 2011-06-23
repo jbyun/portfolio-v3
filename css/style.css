@@ -85,12 +85,16 @@ background:white; color:black;}
 	-moz-transition:background-color 0.1s linear; 
 	transition:background 0.1s linear;
 	}
+	
+#formcontainer {
+	position:relative;
+}
 
 .nameval, .mailval, .msgval, .subjectval {
 	background: rgba(225, 0, 0, 0.8); color:#fff;
 	font-family:'Helvetica','Arial','Sans-serif';
 	display:none; font-size:12px; padding:5px;
-	position: absolute; top:502px; left:270px;
+	position: absolute; left:205px;
 	text-align:center; width:100px;
 	-webkit-transition:background-color 0.1s linear; 
 	-moz-transition:background-color 0.1s linear; 
@@ -98,9 +102,10 @@ background:white; color:black;}
 	border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
 }
 
-.nameval {top:468px;}
-.subjectval {top:535px;}
-.msgval {top:573px;}
+.nameval {top:274px;}
+.mailval {top:308px;}
+.subjectval {top:342px;}
+.msgval {top:379px;}
 
 
 #contact input:focus:required:invalid,
@@ -150,8 +155,8 @@ background:white; color:black;}
 	}
 
 /*** CONTENT COLUMN ***/
-#web {margin-top: 38px;}
-#illustration, #print {margin:0;}
+article#content-col section:nth-child(1) {margin-top: 38px;}
+article#content-col section:nth-child(2), #content-col section:nth-child(3) {margin:0;}
 .portbox {width:200px; height:256px; float:left; margin:0;}
 .portbox h2 {font-size: 24px;} .portbox h3 {font-size: 20px;} .portbox p {font-size: 16px;}
 .portbox h2, .portbox h3 {font-weight:normal;} .portbox hr {width:190px; float:left; margin: 3px 0 3px 0;} 

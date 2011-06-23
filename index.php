@@ -8,12 +8,8 @@
 	<link media="screen" rel="stylesheet" href="css/colorbox.css" /> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 	<script src="scripts/jquery.colorbox.js"></script> 
+	<script src="scripts/scripts.js"></script> 
 
-	<script> 
-	$(document).ready(function(){
-		$("a[rel='showport']").colorbox({transition:"fade"});
-		});
-	</script> 
 
 </head>
 
@@ -64,6 +60,7 @@
 	//if "email" is not filled out, display the form
 	  {
 	  echo "
+	<div id='formcontainer'>
 	<form method='post' action='index.php'>
 	<fieldset>
 		<ol>
@@ -103,6 +100,7 @@
 		</ol>
 		</fieldset>	
 		</form>
+		</div>
 		<p>Not a fan of using forms? Feel free to <a href='mailto:james@byuncreative.com'>email me</a> directly!</p>";
 		
 	  }
@@ -113,7 +111,7 @@
 
 <article id="content-col">
 	
-	<section id="web">
+	<section>
 		<div class="portbox">
 			<h2>Web</h2>
 			<h3>Stagionis Ristorante</h3>
@@ -131,7 +129,7 @@
 		<div class="portbox"><a href="basic-rwd.html" rel="showport"><img src="images/thumb/rwd-thumb.jpg" alt="Basic Responsive - WordPress Template" title="Basic Responsive - WordPress Template" /></a></div>
 	</section>
 	
-	<section id="illustration">
+	<section>
 		<div class="portbox">
 			<h2>Illustration</h2>
 			<h3>Out of this World</h3>
@@ -142,14 +140,19 @@
 			<hr />
 			<h3>Thanks</h3>
 			<p>Personal</p>
+			<hr />
+			<h3>Rock the Red</h3>
+			<p>The Hockey Shop</p>
 		</div>
-		<div class="portbox"><a href="images/large/luongo.jpg" rel="showport"><img src="images/thumb/luongo-thumb.jpg" alt="Out of This Wolrd" title="Out of this World" /></a></div>
+		<div class="portbox"><a href="images/large/luongo.jpg" rel="showport"><img src="images/thumb/luongo-thumb.jpg" alt="Out of This Wolrd" title="Out of this World" /></a>
+				</div>
 		<div class="portbox"><a href="images/large/tiger.jpg" rel="showport"><img src="images/thumb/tiger-thumb.jpg" alt="MK Tiger" title="MK Tiger" /></a></div>
 		<div class="portbox"><a href="images/large/thanks.jpg" rel="showport"><img src="images/thumb/thanks-thumb.jpg" alt="Thanks" title="Thanks" /></a></div>
 	</section>
 	
-	<section id="print">
-		<div class="portbox">
+	<section>
+		<div class="portbox"><a href="images/large/thanks.jpg" rel="showport"><img src="images/thumb/ovy-thumb.jpg" alt="Rock the Red" title="Rock the Red" /></a></div>
+				<div class="portbox">
 			<h2>Print</h2>
 			<h3>Moving Sale</h3>
 			<p>The Hockey Shop</p>
